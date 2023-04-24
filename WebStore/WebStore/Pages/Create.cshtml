@@ -1,0 +1,63 @@
+﻿@page
+@model WebStore.Pages.CreateModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyStore</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyStore.styles.css" asp-append-version="true" />
+</head>
+<br />
+<h2> Dodaj Paczkę</h2>
+
+@if (Model.errorMessage.Length > 0) {
+    <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+      <strong>@Model.errorMessage</strong>
+      <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+    </div>
+}
+
+<form method="post">
+    <div class="row mb-3">
+        <label>Nr Paczki</label>
+        <input type="text" name="Nrpaczki" value="@Model.paczkiinfo.nrpaczki" />
+    </div>
+    <div class="row mb-3">
+        <label>Imie</label>
+        <input type="text" name="Imie" value="@Model.paczkiinfo.imie" />
+    </div>
+    <div class="row mb-3">
+        <label>Nazwisko</label>
+        <input type="text" name="Nazwisko" value="@Model.paczkiinfo.nazwisko" />
+    </div>
+    <div class="row mb-3">
+        <label>Telefon</label>
+        <input type="text" name="Telefon" value="@Model.paczkiinfo.telefon" />
+    </div>
+    
+      @if (Model.successMessage.Length > 0) {
+    <div class="row mb-3">
+        <div class="col-sm-9">
+            <div class='alert alert-success alert-dismissible fade show' role='alert'>
+              <strong>@Model.successMessage</strong>
+              <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+            </div>
+        </div>
+    </div>
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+          <button type="submit" class="btn btn-primary">Dodaj</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+          <a class="btn btn-outline-primary" href="/" role="button">Wyjdź</a>
+        </div>
+    </div>
+   
+</form>

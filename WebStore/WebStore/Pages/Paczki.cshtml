@@ -1,0 +1,46 @@
+﻿@page
+@model WebStore.Pages.PaczkiModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyStore</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyStore.styles.css" asp-append-version="true" />
+</head>
+<br/>
+<h2>Lista Paczek</h2>
+<a class='btn-primary btn-primary btn-sm' href="Create">Dodaj Paczkę</a>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+           <th>ID</th>
+             <th>NrPaczki</th>
+               <th>Imie</th>
+                 <th>Nazwisko</th>
+                   <th>Telefon</th>
+                   <th>Akcje</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var paczki in Model.ListPaczki)
+   {
+        <tr>
+           <td>@paczki.id</td>
+            <td>@paczki.nrpaczki</td>
+             <td>@paczki.imie</td>
+              <td>@paczki.nazwisko</td>
+               <td>@paczki.telefon</td>
+               <td>
+                   <a class="btn-primary btn-primary btn-sm" href="Edit?id=@paczki.id">Edytuj</a>
+                   <a class="btn-danger btn-primary btn-sm" href="Delete?id=@paczki.id">Usuń</a>
+               </td>
+        </tr>
+        }
+    </tbody>
+</table>

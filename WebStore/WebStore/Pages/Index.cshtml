@@ -1,0 +1,118 @@
+﻿@page
+@model Pages_Index
+@{
+    ViewData["Title"] = "Home page";
+}
+<br />
+<!DOCTYPE HTML> 
+<html lang='pl'> 
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+	<title>Start - Paczkokurier </title>
+     <link rel="stylesheet" href="~/css/main.css">
+</head>
+<body>
+<div class="container">
+<div class="header">
+       <div class="headerstyle">
+        <img src="Social-Networks-Instagram-icon.png" alt="ikonka instagram" id="insta"><img src="facebook-icon.png" alt="ikonka fb" id="fb">MASZ PYTANIA? ZADZWOŃ | UK +44 12 223 234 | PL +48 535 35 1043 | Pon-Pt 07:00-18:30, Sob 07:00-14:00
+        </div>
+</div>
+       <div class="photo">
+         <img src="logofirmy.png" alt="">
+            </div>
+        <div class="center">
+     <button type="button" class="button" id="button1"> Start </button>
+     <button type="button" class="button" id="button2"> Cennik </button>
+     <button type="button" class="button" id="button3"> Lista Paczek </button>
+     <button type="button" class="button" id="button4"> Regulamin </button>
+     <button type="button" class="button" id="button5"> Kontakt </button>
+     </div>
+    <div id="slider">
+   <input type="radio" name="slider" id="slide1" checked>
+   <input type="radio" name="slider" id="slide2">
+   <input type="radio" name="slider" id="slide3">
+   <input type="radio" name="slider" id="slide4">
+   <div id="slides">
+      <div id="overflow">
+         <div class="inner">
+            <div class="slide slide_1">
+               <div class="slide-content">
+                   </div>
+               </div>
+            <div class="slide slide_2">
+               <div class="slide-content">
+               </div>
+            </div>
+            <div class="slide slide_3">
+               <div class="slide-content">
+               </div>
+            </div>
+            <div class="slide slide_4">
+               <div class="slide-content">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+   </div>
+   <div id="bullets">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+   </div>
+</div>
+<div class="underslider">
+<div class="undersliderimage">
+    <img src="kurier.png" width="100" id="kurier" alt="">
+</div>
+<br>
+<div class="underslidertxt">
+<h1>NAJBLIŻSZY KURS DO POLSKI - 25 MARCA 2022</h1>
+</div>
+</div>
+<div class="footer">
+ <div class="footerright">
+© 2022 Wszelkie prawa zastrzeżone | Zaprojektowane przez Marcina Mokrzyckiego.
+ </div>
+<br>
+Paczki w UK zbieramy na trasie: <br>
+Londyn– Watford- St Albans–Hemel <br>
+ Hempstead–Bedford–Luton–Dunstable <br> Hitchin–Stevenage–Milton Keynes,<br> Obsługujemy również cała Polskę
+</div>
+<script>
+   document.getElementById("button1").onclick = function () {
+    location.href = "http://localhost:5179/";
+    };
+    document.getElementById("fb").onclick = function () {
+    location.href = "https://www.facebook.com/marcin.mokrzycki.545";
+    };
+    document.getElementById("insta").onclick = function () {
+    location.href = "https://www.instagram.com/maaarcin_7/";
+    };
+  document.getElementById("button2").onclick = function () {
+       location.href = "Index2";
+    };
+     document.getElementById("button3").onclick = function () {
+        location.href = "Paczki";
+    };
+     document.getElementById("button4").onclick = function () {
+         location.href = "Index4";
+    };
+     document.getElementById("button5").onclick = function () {
+          location.href = "Index5";
+    };
+    document.getElementById("kurier").onclick = function () {
+        location.href = "Index3";
+    };
+    </script>
+    </div>
+</body>
+</html>

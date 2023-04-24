@@ -1,0 +1,133 @@
+﻿@page
+@model Pages_Index4
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<!DOCTYPE HTML> 
+<html lang='pl'> 
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+	<title>Start - Paczkokurier </title>
+     <link rel="stylesheet" href="~/css/main.css">
+    
+    
+</head>
+<body>
+<div class="container">
+<div class="header">
+       <div class="headerstyle">
+        <img src="Social-Networks-Instagram-icon.png" alt="ikonka instagram" id="insta"><img src="facebook-icon.png" alt="ikonka fb" id="fb">MASZ PYTANIA? ZADZWOŃ | UK +44 12 223 234 | PL +48 535 35 1043 | Pon-Pt 07:00-18:30, Sob 07:00-14:00
+        </div>
+</div>
+       <div class="photo">
+         <img src="logofirmy.png" alt="">
+            </div>
+        <div class="center">
+     <button type="button" class="button" id="button1"> Start </button>
+     <button type="button" class="button" id="button2"> Cennik </button>
+     <button type="button" class="button" id="button3"> lista Paczek </button>
+     <button type="button" class="button" id="button4"> Regulamin </button>
+     <button type="button" class="button" id="button5"> Kontakt </button>
+    </div>
+<div class="kurs">
+<div class="kursimage">
+    <img src="kurier.png" width="100" id="kurier" alt="">
+</div>
+
+<div class="kurstxt">
+
+<br>
+<h2>Najlbliższy kurs do PL 25/03/2022
+<br>
+kolekcja paczek z Polski: od 20/03/2022 do 22/03/2022</h2>
+</div>
+
+</div>
+
+<div class="regulamin">
+  <br>
+   <div class="center">
+   <h1>
+   Regulamin
+   </h1>
+  </div> 
+   <br>
+   
+   <ul>
+   <li>
+       W przypadku materiałów: kruchych (szkło) łatwo psujących się (żywność) oraz wrażliwych na temperaturę, które Nadawca zdecydował się wysłać (na własne ryzyko) - Paczkowóz nie zapewnia warunków właściwych do przewozu w/w towarów i w razie uszkodzenia lub zepsucia się zawartości - nie ponosi odpowiedzialności.
+   </li>
+   <li>
+       Wskutek przyjęcia przez Odbiorcę przesyłki bez zastrzeżeń wygasają wszelkie roszczenia przeciwko Paczokurier.
+   </li>
+    <li>
+        W przypadku, gdy adresat odmówi przyjęcia paczki jest ona zwracana nadawcy, koszty przewozu (w obie strony) ponosi Zleceniodawca.
+    </li>
+     <li>
+         Zabrania się sklejania dwóch paczek w jedną tzw. „sklejkę”. Paczka taka będzie liczona jako niestandardowa.
+     </li>
+      <li>Paczki są ubezpieczone standardowo na £100. Istnieje możliwość wykupienia dodatkowego ubezpieczenia w cenie £5.</li>
+       <li>Nadawca gwarantuje, że nie przewozi materiałów niebezpiecznych lub żrących oraz towarów akcyzowych  (alkoholu, tytoniu oraz papierosów).
+</li>
+   <li>Firma zastrzega sobie termin dostawy przesyłek do 5 dni roboczych od momentu daty wyjazdu naszego vana do Polski - terminy te mogą ulec zmianie w okresie świąteczym.
+</li>
+   <li>Nadawca zaświadcza, ze adres odbiorcy oraz numer telefonu są poprawne.
+</li>
+   <li>Każda paczka musi być opisana. Na każdej przesyłce powinny znaleźć się następujące dane: imię i nazwisko nadawcy, adres i numer telefonu oraz imię i nazwisko odbiorcy, dokładny adres i numer telefonu.
+</li>
+   <li>Nadawca zobowiązuje się uprzedzić odbiorce o przesyłce wysyłanej pod jego adres oraz upewnić się, ze przesyłka jest oczekiwana.
+</li>
+   <li>Nadawca zobowiązuje się do NIE łączenia kilku pudelek (tzn „sklejek”) w jedną przesyłkę.
+</li>
+   <li>Nadawca gwarantuje, że zawartość przesyłki jest zgodna z jej opisem w dokumencie "collection note".
+</li>
+   <li>Wysyłając przesyłkę nadawca akceptuje regulamin zawarty na naszej stronie oraz wyraża zgodę, na przetwarzanie danych osobowych oraz ewentualny kontakt ze strony firmy lub osób trzecich poprzez kontakt telefoniczny, email, sms lub drogą pocztową. Jeżeli chcą Panstwo usunac dane osobowe z naszej bazy danych prosimy o wysłanie takiego zapytania na adres paczkowozuk@gmail.com
+</li>
+<li>
+***Wysyłając z nami przesyłkę akceptują Państwo powyższy regulamin*** 
+  </li>
+   </ul>
+  
+</div>
+<div class="footer">
+ <div class="footerright">
+© 2022 Wszelkie prawa zastrzeżone | Zaprojektowane przez Marcina Mokrzyckiego.
+ </div>
+<br>
+Paczki w UK zbieramy na trasie: <br>
+Londyn– Watford- St Albans–Hemel <br>
+ Hempstead–Bedford–Luton–Dunstable <br> Hitchin–Stevenage–Milton Keynes,<br> Obsługujemy również cała Polskę
+</div>
+
+<script>
+    
+   document.getElementById("button1").onclick = function () {
+    location.href = "http://localhost:5179/";
+    };
+    document.getElementById("fb").onclick = function () {
+    location.href = "https://www.facebook.com/marcin.mokrzycki.545";
+    };
+    document.getElementById("insta").onclick = function () {
+    location.href = "https://www.instagram.com/maaarcin_7/";
+    };
+  document.getElementById("button2").onclick = function () {
+       location.href = "Index2";
+    };
+     document.getElementById("button3").onclick = function () {
+         location.href = "Paczki";
+    };
+     document.getElementById("button4").onclick = function () {
+          location.href = "Index4";
+    };
+     document.getElementById("button5").onclick = function () {
+          location.href = "Index5";
+    };
+    document.getElementById("kurier").onclick = function () {
+        location.href = "Index3";
+    };
+    
+    </script>
+    </div>
+</body>
+</html>
